@@ -1,5 +1,5 @@
 #include <stdio.h>
-int all_files;
+static all_files;
 
 extern void sub();
 
