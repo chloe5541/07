@@ -1,16 +1,11 @@
 #include <stdio.h>
-void f(void);
+int all_files;
 
-int main (void)
-{
-    int i;
-    for(i=0;i<5;i++)
-         f();
-}
+extern void sub();
 
-void f(void)
+int main(void)
 {
-    int i;
-    for (i=0;i<10;i++)
-    printf("#");
+    sub();
+    printf("%d\n", all_files);
+    return 0;
 }
